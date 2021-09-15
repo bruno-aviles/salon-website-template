@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	background-image: linear-gradient(white, black);
+	min-height: 100vh;
+}
+
+/*====TITLE/MAIN CONTAINER====*/
+.title {
+	color: black;
+	text-align: center;
+	margin: 0;
+	/*border: 3px none white;*/
+	/*border-radius: 10px;*/
+	/*box-shadow: 0px 0px 5px 5px white;*/
+	font-family: 'Rock Salt', cursive;
+}
+
+.mainContainer {
+	/* border: solid 2px red; */
+	min-height: 900px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+/*====NAVIGATION====*/
+#navcontainer {
+	/* border: solid 2px magenta; */
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#navcontainer img {
+	/*position: relative;*/
+	width: 300px;
+	height: 400px;
+	box-shadow: 0px 0px 5px 5px pink;
+	float: center;
+	border-radius: 5px;
+	transition: all 0.7s
+}
+
+#navcontainer img:hover {
+	transform: scale(0.9);
+}
+
+/*-parent for navigation text-*/
+.services-container,
+.appointment-container,
+.products-container {
+	position: relative;
+	margin: 25px;
+}
+
+/*-centering text inside picture-*/
+.services,
+.appointment,
+.products {
+	font-family: 'Rock Salt', cursive;
+	color: pink;
+	cursor: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* ====ABOUT==== */
+#aboutContainer {
+	/* border: solid 2px blueviolet; */
+	background-color: pink;
+	font-family: "Lucida Handwriting";
+	color: black;
+	text-align: center;
+	overflow: hidden;
+}
+
+.aboutme {
+	height: 100px;
+	margin: 3px;
+	border:	1px hidden #000000;
+	border-radius: 3px;
+}
+
+
