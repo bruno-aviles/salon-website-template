@@ -1,7 +1,13 @@
 body {
 	margin: 0;
-	background-image: linear-gradient(white, black);
+	/* background-image: linear-gradient(white, black); */
 	min-height: 100vh;
+}
+
+section {
+	min-height: 900px;
+	width: 100%;
+	border: 2px solid magenta;
 }
 
 /*====TITLE/MAIN CONTAINER====*/
@@ -22,6 +28,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-image: linear-gradient(white, black);
 }
 
 /*====NAVIGATION====*/
@@ -60,6 +67,7 @@ body {
 .appointment,
 .products {
 	font-family: 'Rock Salt', cursive;
+	text-shadow: 2px 2px 4px #000000;
 	color: pink;
 	cursor: none;
 	position: absolute;
@@ -67,8 +75,6 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-
 
 /* ====ABOUT==== */
 #aboutContainer {
@@ -87,4 +93,7 @@ body {
 	border-radius: 3px;
 }
 
+/* ====SERVICES PAGE==== */
+.services {
 
+}
