@@ -1,17 +1,22 @@
 body {
 	margin: 0;
-	background-image: linear-gradient(white, black);
 	min-height: 100vh;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 900px;
+	width: 100%;
+	/* border: 2px solid magenta; */	
 }
 
 /*====TITLE/MAIN CONTAINER====*/
 .title {
 	color: black;
 	text-align: center;
-	margin: 0;
-	/*border: 3px none white;*/
-	/*border-radius: 10px;*/
-	/*box-shadow: 0px 0px 5px 5px white;*/
+	margin: 10px;
 	font-family: 'Rock Salt', cursive;
 }
 
@@ -22,6 +27,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	background-image: linear-gradient(white, rgb(105, 105, 105));
+	/* background-image: linear-gradient(white, black); */
 }
 
 /*====NAVIGATION====*/
@@ -34,7 +41,6 @@ body {
 }
 
 #navcontainer img {
-	/*position: relative;*/
 	width: 300px;
 	height: 400px;
 	box-shadow: 0px 0px 5px 5px pink;
@@ -73,7 +79,7 @@ body {
 /* ====ABOUT==== */
 #aboutContainer {
 	/* border: solid 2px blueviolet; */
-	background-color: pink;
+	background-color: rgba(255, 193, 203, 0.9);
 	font-family: "Lucida Handwriting";
 	color: black;
 	text-align: center;
@@ -87,4 +93,64 @@ body {
 	border-radius: 3px;
 }
 
+/* ====SERVICES PAGE==== */
+#page {
+	background-color: rgb(105, 105, 105);
+}
 
+#page h1 {
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.info-display {
+	display: flex;
+	align-items: center;
+	justify-content:space-evenly;
+	height: 500px;
+	width: 60%;
+	border-radius: 5px;
+	background-color: rgba(255, 193, 203, 0.9);
+	/* border: solid 2px black; */
+}
+
+.service-description img {
+	width: 100%;
+	height: 100%; 
+	border-radius: 10%;
+}
+
+.service-description {
+	height: 80%;
+	width: 30%;
+	box-shadow: 0px 0px 5px 5px black;
+	border-radius: 10%;
+	object-fit: fill;
+
+	text-align: center;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.2rem;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+	background-color: rgb(105, 105, 105);
+	/* border: solid 3px black; */
+	position: relative;
+}
+
+.service-description h2{text-decoration: underline;}
+
+.service-description ul {
+	padding-left: 0;
+	
+	/* sets lists items in the center */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.service-description li {
+	padding: 10px;
+	list-style: none;
+}
