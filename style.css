@@ -66,6 +66,7 @@ section {
 .appointment,
 .products {
 	font-family: 'Rock Salt', cursive;
+	text-shadow: 2px 2px 4px #000000;
 	color: pink;
 	cursor: none;
 	position: absolute;
@@ -73,8 +74,6 @@ section {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-
 
 /* ====ABOUT==== */
 #aboutContainer {
