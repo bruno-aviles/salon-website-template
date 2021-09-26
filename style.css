@@ -35,7 +35,6 @@ section {
 	flex-direction: column;
 	justify-content: space-around;
 	background-image: linear-gradient(white, rgb(105, 105, 105));
-	/* background-image: linear-gradient(white, black); */
 }
 
 /*====NAVIGATION====*/
@@ -86,10 +85,15 @@ section {
 #aboutContainer {
 	/* border: solid 2px blueviolet; */
 	background-color: rgba(255, 193, 203, 0.9);
-	font-family: "Lucida Handwriting";
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.3rem;
 	color: black;
 	text-align: center;
 	overflow: hidden;
+
+}
+#aboutContainer h3 {
+	font-family: 'Rock Salt', cursive;
 }
 
 .aboutme {
@@ -132,6 +136,7 @@ section {
 	text-shadow: 2px 2px 4px #000000;
 	background-color: rgb(105, 105, 105);
 	/* border: solid 3px black; */
+	
 	position: relative;
 }
 
@@ -152,7 +157,7 @@ section {
 	list-style: none;
 }
 
-/* PRODUCTS PAGE */
+/* ====PRODUCTS PAGE==== */
 .productsContainer {
 	/* border: 2px solid magenta; */
 	position: relative;
@@ -177,11 +182,81 @@ article {
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	margin-left: 3%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-article h3 {
-	font-size: 2rem;
-}
-article p {
-	font-size: 1.5rem;
-}
+article h3 {font-size: 2rem;}
+article p {font-size: 1.5rem;}
 span{color: violet;}
+
+/* ====APPOINTMENT PAGE==== */
+.appointmentContainer {
+	/* border: 2px solid magenta; */
+	background-image: linear-gradient(rgb(105, 105, 105), white);
+}
+
+.form-display {
+	height: 700px;
+	width: 90%;
+	background-image: url(Images/appointment_images/appointment-background.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-shadow: 0px 0px 3px 3px black;
+	
+	position: relative;
+	/* border: solid 2px aqua; */
+}
+.form-display span {
+	font-size: 2rem;
+	font-family: 'Rock Salt', cursive;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.form-display input {
+	height: 30px;
+	width: 300px;
+}
+
+.infoContainer {
+	display: flex;
+	justify-content: center;
+}
+.client-info {
+	text-align: center;
+	margin: 5px;
+}
+
+.selectionContainer {
+	position: absolute;
+	top: 450px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height:40%;
+	width: 80%;
+
+	display: flex;
+	/* border: solid 2px lime; */
+}
+
+.selection {
+	height: 100%;
+	width: 25%;
+	font-size: 1.5rem;
+	/* border: solid 2px red; */
+}
+
+.selection input {
+	height: 15px;
+	width: 15px;
+}
+
+
+.submitButton {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 50px;
+	width: 100px;
+}
