@@ -2,6 +2,10 @@
 	box-sizing: inherit;
 }
 
+html {
+	font-size: 62.5%; /*10px*/
+}
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -13,7 +17,7 @@ section {
 	flex-direction: column;
 	align-items: center;
 	/* justify-content:space-evenly; */
-	min-height: 900px;
+	min-height: 90rem;
 	width: 100%;
 
 	/* border: 2px solid magenta;	 */
@@ -33,13 +37,13 @@ section {
 .title--main {
 	color: black;
 	text-align: center;
-	margin: 10px;
+	margin: 1rem;
 	font-family: 'Rock Salt', cursive;
 }
 
 .heroContainer {
 	/* border: solid 2px red; */
-	min-height: 900px;
+	min-height: 90rem;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -60,15 +64,16 @@ section {
 /*-parent for navigation text-*/
 .navButton {
 	position: relative;
-	margin: 10px;
-	width: 300px;
-	height: 400px;
+	margin: 1rem;
+	width: 30rem;
+	height: 40rem;
 	/*KEEPS TEXT IN CENTER OF BOX.*/
-	padding-top: 200px; /*ONLY WORKS USING "box-sizing:border-box;"*/
-	box-shadow: 0px 0px 5px 5px pink;
-	border-radius: 5px;
+	padding-top: 20rem; /*ONLY WORKS USING "box-sizing:border-box;"*/
+	box-shadow: 0rem 0rem .5rem .5rem pink;
+	border-radius: .5rem;
 	font-family: 'Rock Salt', cursive;
-	text-shadow: 2px 2px 4px #000000;
+	font-size: 1.8rem;
+	text-shadow: .2rem .2rem .4rem #000000;
 	text-align: center;
 	color: pink;
 	transition: all 0.2s
@@ -90,7 +95,7 @@ section {
 
 .navButton:hover {
 	transform: scale(0.9);
-	box-shadow: 0px 0px 15px 15px pink;
+	box-shadow: 0rem 0rem 1.5rem 1.5rem pink;
 }
 
 .navButton--services {
@@ -116,7 +121,7 @@ section {
 	/* border: solid 2px blueviolet; */
 	background-color: rgba(255, 193, 203, 0.9);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 1.3rem;
+	font-size: 2rem;
 	color: black;
 	text-align: center;
 	/* overflow: hidden; */
@@ -127,10 +132,9 @@ section {
 }
 
 .aboutme {
-	height: 100px;
-	margin: 3px;
-	border:	1px hidden #000000;
-	border-radius: 3px;
+	margin: .2rem;
+	border:	.1rem hidden #000000;
+	border-radius: .3rem;
 }
 
 /* ====SERVICES PAGE==== */
@@ -138,11 +142,11 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content:space-evenly;
-	height: 500px;
+	height: 50rem;
 	width: 60%;
-	border-radius: 5px;
-	margin: 15px;
-	box-shadow: 0px 0px 15px 15px pink;
+	border-radius: .5rem;
+	margin: 1.5rem;
+	box-shadow: 0rem 0rem 1.5rem 1.5rem pink;
 	background-color: rgba(255, 193, 203, 0.9);
 
 	/* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
@@ -179,14 +183,14 @@ section {
 .service-description {
 	height: 80%;
 	width: 50%;
-	box-shadow: 0px 0px 5px 5px black;
+	box-shadow: 0rem 0rem .5rem .5rem black;
 	border-radius: 10%;
 	object-fit: fill;
 
 	text-align: center;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	background-color: rgba(105, 105, 105, 0.432);
@@ -208,7 +212,8 @@ section {
 }
 
 .service-description li {
-	padding: 10px;
+	font-size: 2rem;
+	padding: 1rem;
 	list-style: none;
 }
 
@@ -239,8 +244,8 @@ article {
 	margin-left: 3%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-article h3 {font-size: 2rem;}
-article p {font-size: 1.5rem;}
+article h3 {font-size: 2.75rem;}
+article p {font-size: 2.5rem;}
 span{color: violet;}
 
 /* ====APPOINTMENT PAGE==== */
@@ -250,14 +255,14 @@ span{color: violet;}
 }
 
 .form-display {
-	height: 700px;
+	height: 70rem;
 	width: 90%;
 	background-image: url(Images/appointment_images/appointment-background.jpg);
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	box-shadow: 0px 0px 3px 3px black;
+	box-shadow: 0rem 0rem .3rem .3rem black;
 	
 	position: relative;
 	/* border: solid 2px aqua; */
@@ -265,12 +270,12 @@ span{color: violet;}
 .form-display span {
 	font-size: 2rem;
 	font-family: 'Rock Salt', cursive;
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: .2rem .2rem .4rem #000000;
 }
 
 .form-display input {
-	height: 30px;
-	width: 300px;
+	height: 3rem;
+	width: 30rem;
 }
 
 .infoContainer {
@@ -279,12 +284,12 @@ span{color: violet;}
 }
 .client-info {
 	text-align: center;
-	margin: 5px;
+	margin: .5rem;
 }
 
 .selectionContainer {
 	position: absolute;
-	top: 450px;
+	top: 45rem;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height:40%;
@@ -302,8 +307,8 @@ span{color: violet;}
 }
 
 .selection input {
-	height: 15px;
-	width: 15px;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
 
@@ -312,6 +317,6 @@ span{color: violet;}
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 50px;
-	width: 100px;
+	height: 5rem;
+	width: 10rem;
 }
