@@ -16,11 +16,8 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content:space-evenly; */
 	min-height: 90rem;
 	width: 100%;
-
-	/* border: 2px solid magenta;	 */
 }
 
 .page--backgroundColor {
@@ -44,7 +41,6 @@ section {
 }
 
 .heroContainer {
-	/* border: solid 2px red; */
 	min-height: 90rem;
 	width: 100%;
 	display: flex;
@@ -55,8 +51,6 @@ section {
 
 /*====NAVIGATION====*/
 .heroContainer__navigation {
-	/* border: solid 2px magenta; */
-
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
@@ -79,21 +73,7 @@ section {
 	text-align: center;
 	color: pink;
 	transition: all 0.2s
-
-	/* border: solid 2px red; */
 }
-
-/* .navButton a {	
-	border: solid 2px red;
-
-	text-align: center;
-	bottom: 50%;
-	text-decoration: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-} */
 
 .navButton:hover {
 	transform: scale(0.9);
@@ -120,13 +100,10 @@ section {
 
 /* ====ABOUT==== */
 #aboutContainer {
-	/* border: solid 2px blueviolet; */
 	background-color: rgba(255, 193, 203, 0.9);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	/* font-size: 1.5rem; */
 	color: black;
 	text-align: center;
-	/* overflow: hidden; */
 
 }
 #aboutContainer h3 {
@@ -142,18 +119,27 @@ section {
 }
 
 /* ====SERVICES PAGE==== */
+.page--layout {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+
+
+}
+
 .info__display {
 	display: flex;
 	align-items: center;
 	justify-content:space-evenly;
 	height: 50rem;
-	width: 60%;
+	width: 73rem;
 	border-radius: .5rem;
 	margin: 1.5rem;
-	box-shadow: 0rem 0rem 1.5rem 1.5rem pink;
+	box-shadow: 0rem 0rem 1rem 1rem pink;
 	background-color: rgba(255, 193, 203, 0.9);
 
-	/* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
 	/* border: solid 2px black; */
 }
 
@@ -198,7 +184,6 @@ section {
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 	background-color: rgba(105, 105, 105, 0.432);
-	/* border: solid 3px black; */
 	
 	position: relative;
 }
@@ -223,7 +208,6 @@ section {
 
 /* ====PRODUCTS PAGE==== */
 .productsContainer {
-	/* border: 2px solid magenta; */
 	position: relative;
 }
 
@@ -238,7 +222,6 @@ section {
 	background-image: url(Images/products_images/products-background.jpg);
 	background-size: cover;
 	background-position: center;
-	/* border: solid 2px red; */
 }
 
 article {
@@ -254,7 +237,6 @@ span{color: violet;}
 
 /* ====APPOINTMENT PAGE==== */
 .appointmentContainer {
-	/* border: 2px solid magenta; */
 	background-image: linear-gradient(rgb(105, 105, 105), white);
 }
 
@@ -270,7 +252,6 @@ span{color: violet;}
 	box-shadow: 0rem 0rem .3rem .3rem black;
 	
 	position: relative;
-	/* border: solid 2px aqua; */
 }
 .form-display span {
 	font-size: 3rem;
@@ -290,7 +271,6 @@ span{color: violet;}
 }
 
 .infoContainer {
-	/* border: solid 2px lime; */
 	display: flex;
 	justify-content: center;
 }
@@ -301,7 +281,6 @@ span{color: violet;}
 
 .client-info {
 	width: 100%;
-	/* border: solid 1px magenta; */
 	text-align: center;
 	margin: 1rem;
 }
@@ -315,15 +294,12 @@ span{color: violet;}
 	width: 80%;
 
 	display: flex;
-	/* justify-items: center; */
-	/* border: solid 2px lime; */
 }
 
 .selection {
 	height: 100%;
 	width: 25%;
 	font-size: 1.8rem;
-	/* border: solid 2px red; */
 }
 
 .selection input {
